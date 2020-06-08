@@ -19,7 +19,7 @@ namespace Bai_Tap_Lon.DAO
 
         public bool Login(string userName, string password)
         {
-            string query = "USP_Login @userName , @password  ";
+            string query = "USP_Login @userName , @password";
 
             DataTable result = DataProvider.instance.ExcuteQuery(query, new object[] { userName, password });
 

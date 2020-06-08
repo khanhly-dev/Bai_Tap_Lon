@@ -16,5 +16,29 @@ namespace Bai_Tap_Lon
         {
             InitializeComponent();
         }
+
+        private void DashBoard_BTN_Click(object sender, EventArgs e)
+        {
+            DashBoardForm dashBoard = new DashBoardForm();
+            dashBoard.Show();
+        }
+
+        private void Transfer_BTN_Click(object sender, EventArgs e)
+        {
+            TransferForm transfer = new TransferForm();
+            transfer.Show();
+        }
+
+        private void Customer_BTN_Click(object sender, EventArgs e)
+        {
+            CustomerForm customer = new CustomerForm();
+            customer.Show();
+        }
+
+        private void Employee_BTN_Click(object sender, EventArgs e)
+        {
+            EmployeeForm employee = new EmployeeForm();
+            employee.Show();
+        }
     }
 }

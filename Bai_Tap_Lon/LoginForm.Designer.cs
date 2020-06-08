@@ -88,6 +88,7 @@
             // 
             // UserName_TBX
             // 
+            this.UserName_TBX.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UserName_TBX.Location = new System.Drawing.Point(156, 87);
             this.UserName_TBX.Multiline = true;
             this.UserName_TBX.Name = "UserName_TBX";
@@ -96,6 +97,7 @@
             // 
             // Password_TBX
             // 
+            this.Password_TBX.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Password_TBX.Location = new System.Drawing.Point(156, 134);
             this.Password_TBX.Multiline = true;
             this.Password_TBX.Name = "Password_TBX";
