@@ -174,9 +174,9 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Location = new System.Drawing.Point(862, 98);
+            this.panel4.Location = new System.Drawing.Point(862, 101);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(282, 618);
+            this.panel4.Size = new System.Drawing.Size(282, 615);
             this.panel4.TabIndex = 1;
             // 
             // panel3

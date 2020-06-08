@@ -10,16 +10,13 @@ using System.Windows.Forms;
 
 namespace Bai_Tap_Lon
 {
-    public partial class DashBoardForm : Form
+    public partial class ReportForm : Form
     {
-        public DashBoardForm()
+        public ReportForm()
         {
             InitializeComponent();
         }
 
-        private void DashBoardForm_Load(object sender, EventArgs e)
-        {
 
-        }
     }
 }
