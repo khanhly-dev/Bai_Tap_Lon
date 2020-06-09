@@ -40,5 +40,11 @@ namespace Bai_Tap_Lon
             EmployeeForm employee = new EmployeeForm();
             employee.Show();
         }
+
+        private void Report_BTN_Click(object sender, EventArgs e)
+        {
+            ReportForm report = new ReportForm();
+            report.Show();
+        }
     }
 }

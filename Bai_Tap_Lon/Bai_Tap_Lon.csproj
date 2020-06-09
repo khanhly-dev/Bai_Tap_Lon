@@ -54,6 +54,8 @@
     </Compile>
     <Compile Include="DAO\AccountDAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="DAO\ExportBillDAO.cs" />
+    <Compile Include="DAO\ImportBillDAO.cs" />
     <Compile Include="DashBoardForm.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -30,6 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Report_BTN = new System.Windows.Forms.Button();
             this.Employee_BTN = new System.Windows.Forms.Button();
             this.Customer_BTN = new System.Windows.Forms.Button();
             this.Transfer_BTN = new System.Windows.Forms.Button();
@@ -45,7 +46,7 @@
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.ProductSeach_CBB = new System.Windows.Forms.ComboBox();
             this.TypeSeach_CBB = new System.Windows.Forms.ComboBox();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.ListSell_LV = new System.Windows.Forms.ListView();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -66,6 +67,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.Report_BTN);
             this.panel1.Controls.Add(this.Employee_BTN);
             this.panel1.Controls.Add(this.Customer_BTN);
             this.panel1.Controls.Add(this.Transfer_BTN);
@@ -76,12 +78,23 @@
             this.panel1.Size = new System.Drawing.Size(227, 615);
             this.panel1.TabIndex = 2;
             // 
+            // Report_BTN
+            // 
+            this.Report_BTN.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Report_BTN.Location = new System.Drawing.Point(3, 468);
+            this.Report_BTN.Name = "Report_BTN";
+            this.Report_BTN.Size = new System.Drawing.Size(218, 96);
+            this.Report_BTN.TabIndex = 5;
+            this.Report_BTN.Text = "Báo cáo";
+            this.Report_BTN.UseVisualStyleBackColor = true;
+            this.Report_BTN.Click += new System.EventHandler(this.Report_BTN_Click);
+            // 
             // Employee_BTN
             // 
             this.Employee_BTN.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Employee_BTN.Location = new System.Drawing.Point(3, 421);
+            this.Employee_BTN.Location = new System.Drawing.Point(3, 366);
             this.Employee_BTN.Name = "Employee_BTN";
-            this.Employee_BTN.Size = new System.Drawing.Size(221, 115);
+            this.Employee_BTN.Size = new System.Drawing.Size(221, 96);
             this.Employee_BTN.TabIndex = 4;
             this.Employee_BTN.Text = "Nhân viên";
             this.Employee_BTN.UseVisualStyleBackColor = true;
@@ -90,9 +103,9 @@
             // Customer_BTN
             // 
             this.Customer_BTN.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Customer_BTN.Location = new System.Drawing.Point(3, 300);
+            this.Customer_BTN.Location = new System.Drawing.Point(3, 264);
             this.Customer_BTN.Name = "Customer_BTN";
-            this.Customer_BTN.Size = new System.Drawing.Size(221, 115);
+            this.Customer_BTN.Size = new System.Drawing.Size(221, 96);
             this.Customer_BTN.TabIndex = 3;
             this.Customer_BTN.Text = "Khách hàng";
             this.Customer_BTN.UseVisualStyleBackColor = true;
@@ -101,9 +114,9 @@
             // Transfer_BTN
             // 
             this.Transfer_BTN.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Transfer_BTN.Location = new System.Drawing.Point(3, 179);
+            this.Transfer_BTN.Location = new System.Drawing.Point(3, 162);
             this.Transfer_BTN.Name = "Transfer_BTN";
-            this.Transfer_BTN.Size = new System.Drawing.Size(221, 115);
+            this.Transfer_BTN.Size = new System.Drawing.Size(221, 96);
             this.Transfer_BTN.TabIndex = 2;
             this.Transfer_BTN.Text = "Giao dịch";
             this.Transfer_BTN.UseVisualStyleBackColor = true;
@@ -114,7 +127,7 @@
             this.DashBoard_BTN.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DashBoard_BTN.Location = new System.Drawing.Point(3, 60);
             this.DashBoard_BTN.Name = "DashBoard_BTN";
-            this.DashBoard_BTN.Size = new System.Drawing.Size(221, 115);
+            this.DashBoard_BTN.Size = new System.Drawing.Size(221, 96);
             this.DashBoard_BTN.TabIndex = 1;
             this.DashBoard_BTN.Text = "Danh mục";
             this.DashBoard_BTN.UseVisualStyleBackColor = true;
@@ -186,7 +199,7 @@
             this.panel3.Controls.Add(this.numericUpDown1);
             this.panel3.Controls.Add(this.ProductSeach_CBB);
             this.panel3.Controls.Add(this.TypeSeach_CBB);
-            this.panel3.Controls.Add(this.listView1);
+            this.panel3.Controls.Add(this.ListSell_LV);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel3.Location = new System.Drawing.Point(261, 101);
@@ -230,14 +243,14 @@
             this.TypeSeach_CBB.Size = new System.Drawing.Size(117, 28);
             this.TypeSeach_CBB.TabIndex = 3;
             // 
-            // listView1
+            // ListSell_LV
             // 
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(3, 94);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(589, 440);
-            this.listView1.TabIndex = 2;
-            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.ListSell_LV.HideSelection = false;
+            this.ListSell_LV.Location = new System.Drawing.Point(3, 94);
+            this.ListSell_LV.Name = "ListSell_LV";
+            this.ListSell_LV.Size = new System.Drawing.Size(589, 440);
+            this.ListSell_LV.TabIndex = 2;
+            this.ListSell_LV.UseCompatibleStateImageBehavior = false;
             // 
             // label3
             // 
@@ -285,13 +298,14 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.ComboBox ProductSeach_CBB;
-        private System.Windows.Forms.ComboBox TypeSeach_CBB;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView ListSell_LV;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button Add_BTN;
         private System.Windows.Forms.Button Employee_BTN;
         private System.Windows.Forms.Button Customer_BTN;
         private System.Windows.Forms.Button Transfer_BTN;
         private System.Windows.Forms.Button DashBoard_BTN;
+        private System.Windows.Forms.Button Report_BTN;
+        private System.Windows.Forms.ComboBox TypeSeach_CBB;
     }
 }
