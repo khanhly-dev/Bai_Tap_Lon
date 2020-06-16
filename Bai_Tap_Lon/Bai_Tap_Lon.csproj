@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddProductIntoDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddProductIntoDashboard.Designer.cs">
+      <DependentUpon>AddProductIntoDashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomerForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -53,6 +59,7 @@
       <DependentUpon>CustomerForm.cs</DependentUpon>
     </Compile>
     <Compile Include="DAO\AccountDAO.cs" />
+    <Compile Include="DAO\DashBoardDAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="DAO\ExportBillDAO.cs" />
     <Compile Include="DAO\ImportBillDAO.cs" />
@@ -62,6 +69,7 @@
     <Compile Include="DashBoardForm.Designer.cs">
       <DependentUpon>DashBoardForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="DTO\DashBoard.cs" />
     <Compile Include="EmployeeForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -155,8 +163,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DTO\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

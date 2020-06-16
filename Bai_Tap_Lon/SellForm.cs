@@ -46,5 +46,7 @@ namespace Bai_Tap_Lon
             ReportForm report = new ReportForm();
             report.Show();
         }
+
+       
     }
 }
